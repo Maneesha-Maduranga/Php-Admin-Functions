@@ -1,0 +1,2 @@
+# GalaxyStore
+Admin functionality
