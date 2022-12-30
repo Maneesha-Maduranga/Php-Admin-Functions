@@ -1,4 +1,4 @@
-<?php include './config/db.php'?>
+<?php include './config/db.php' ?>
 
 <?php
 
@@ -15,24 +15,27 @@ mysqli_free_result($result);
 ?>
 
 
-<?php include './Temp/header.php'?>
+<?php include './Temp/header.php' ?>
 
 
 <div class="grid md:px-8 py-2 md:grid-cols-5 gap-2">
-  <?php foreach ($item as $oneItem) : ?>
+  <?php foreach ($item as $oneItem): ?>
 
     <form action="cart.php" method="POST">
 
-        <div class="card w-64 p-3 bg-base-50 shadow-xl  sm:w-48px-2">
+      <div class="card w-64 p-3 bg-base-50 shadow-xl  sm:w-48px-2">
 
         <figure><img src="./img/phone.jpg" alt="Shoes" /></figure>
         <div class="card-body">
-          <h6><?php echo htmlspecialchars($oneItem['name']) ?></h6>
+          <h6>
+            <?php echo htmlspecialchars($oneItem['name']) ?>
+          </h6>
           <p class="text-sm ..."> Price : <?php echo htmlspecialchars($oneItem['price']) ?> <br>
             Availble Item : <?php echo htmlspecialchars($oneItem['quantity']) ?> <br>
             Item Discount : <?php echo htmlentities($oneItem['discount']) ?>
           </p>
-          <input type="text" placeholder="Enter Quantity" name="quantity" class="input input-bordered input-sm w-full max-w-xs"/>
+          <input type="text" placeholder="Enter Quantity" name="quantity"
+            class="input input-bordered input-sm w-full max-w-xs" />
           <input type="hidden" name="id" value="<?php echo $oneItem['id'] ?>">
           <input type="hidden" name="Name" value="<?php echo $oneItem['name'] ?>">
           <input type="hidden" name="Price" value="<?php echo $oneItem['price'] ?>">
@@ -48,7 +51,7 @@ mysqli_free_result($result);
         </div>
       </div>
     </form>
-  <?php endforeach; ?>
+    <?php endforeach; ?>
 </div>
 
 
