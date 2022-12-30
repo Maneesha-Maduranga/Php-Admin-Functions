@@ -25,7 +25,7 @@ if (isset($_POST['Remove'])) {
   $sql = "DELETE FROM item WHERE id=$id";
 
   if (mysqli_query($conn, $sql)) {
-    header("Location: index.php");
+    header('Location: ./admin.php');
   } else {
     echo "Error";
   }
@@ -71,7 +71,7 @@ if (isset($_POST['Remove'])) {
 
             </p>
             <div class="card-actions justify-end">
-              <form action="index.php?id=<?php echo $oneItem['id']; ?>" method="post">
+              <form action="admin.php?id=<?php echo $oneItem['id']; ?>" method="post">
                 <input type="submit" name="Remove" value="Remove" class="btn btn-outline btn-error btn-xs">
               </form>
               <form action="editItem.php?id=<?php echo $oneItem['id']; ?>" method="post">

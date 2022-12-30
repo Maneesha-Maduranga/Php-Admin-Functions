@@ -17,6 +17,7 @@
     <a href="/GalaxyStore/index.php"><img src="https://cdn-icons-png.flaticon.com/512/2991/2991473.png" alt="" class="w-8">
     <h1 class="text-2xl px-2">Galaxy Store</h1>
     </a>
+
   </div>
   <div class="flex-none">
     <ul class="menu menu-horizontal px-1">

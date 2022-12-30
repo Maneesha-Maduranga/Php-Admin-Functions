@@ -40,7 +40,7 @@ if (isset($_POST["Edit"])) {
 
     if (mysqli_query($conn, $sql)) {
         echo "<script>alert('Update')</script>";
-        header('Location:index.php');
+        header('Location: ./admin.php');
     } else {
         echo "Error " . mysqli_error($conn);
     }
