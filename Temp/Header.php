@@ -14,7 +14,7 @@
 <div class="flex flex-col justify-between h-screen">
 <div class="navbar bg-base-100">
   <div class="flex-1">
-    <a href="../Backend/index.php"><img src="../Backend/img/store.png" alt="" class="w-8"></a>
+    <a href="/GalaxyStore/index.php"><img src="../Backend/img/store.png" alt="" class="w-8"></a>
     <h1 class="text-2xl px-2">Galaxy Store</h1>
   </div>
   <div class="flex-none">
