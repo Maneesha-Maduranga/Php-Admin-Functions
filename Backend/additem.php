@@ -44,6 +44,7 @@
             $sql = "INSERT INTO item (name,price,quantity,discount) VALUES ('$name','$price',$quantity,$discount)";
 
             if(mysqli_query($conn,$sql)){
+                header('Location: ./admin.php');
                 $name = $price = $discount = $quantity = '';
 
             }else{

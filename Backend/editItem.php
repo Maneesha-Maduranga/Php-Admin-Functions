@@ -30,13 +30,14 @@ if (isset($_POST['Update'])) {
 
 if (isset($_POST["Edit"])) {
     $id = $_GET['id'];
+    
 
     $name = htmlspecialchars($_POST['itemName']);
     $price = htmlspecialchars($_POST['itemPrice']);
     $quntity = htmlspecialchars($_POST['itemQuntity']);
     $dicsount = htmlspecialchars($_POST['itemDiscount']);
 
-    $sql = "UPDATE item SET name='$name',price='$price',discount='$dicsount',quantity='$quntity' WHERE  $id";
+    $sql = "UPDATE item SET name='$name',price='$price',discount='$dicsount',quantity='$quntity' WHERE  id = $id";
 
     if (mysqli_query($conn, $sql)) {
         echo "<script>alert('Update')</script>";
