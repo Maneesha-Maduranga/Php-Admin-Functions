@@ -19,9 +19,4 @@
     </a>
 
   </div>
-  <div class="flex-none">
-    <ul class="menu menu-horizontal px-1">
-      <li><a href="../Backend/additem.php">ADD Item</a></li>
-    </ul>
-  </div>
 </div>
