@@ -8,7 +8,7 @@ $user_data = checkLogin($conn);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     unset($_SESSION["user_id"]);
-    header("Location: login.php");
+    header("Location: /GalaxyStore/index.php");
     die();
 }
 ?>

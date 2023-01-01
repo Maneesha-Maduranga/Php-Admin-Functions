@@ -3,7 +3,6 @@
 <?php
 
 //To Load The Store Item 
-
 $sql = "SELECT id,name,price,quantity,discount FROM item";
 
 $result = mysqli_query($conn, $sql);
@@ -11,6 +10,7 @@ $result = mysqli_query($conn, $sql);
 $item = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 mysqli_free_result($result);
+
 
 ?>
 

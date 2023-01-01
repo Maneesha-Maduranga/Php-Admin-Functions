@@ -1,8 +1,13 @@
 <?php include './config/db.php' ?>
 
-
 <?php
 
+session_start();
+
+include("./config/db.php");
+include("./Backend/functions.php");
+
+$user_data = checkLogin($conn);
 
 if (isset($_POST['id'])) {
 

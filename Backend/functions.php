@@ -12,7 +12,7 @@ function checkLogin($con)
             return $user_data;
         }
     }
-    header("location: login.php");
+    header("location: /GalaxyStore/backend/login.php");
     die();
 }
 
